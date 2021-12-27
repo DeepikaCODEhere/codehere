@@ -1,0 +1,11 @@
+def reverse(n):
+    rev=0
+    temp=n
+    while n>0:
+        r = n%10
+        n=int(n/10)
+        rev = rev*10+r
+    return rev
+n= int(input(" enter number"))
+rev=reverse(n)
+print("reverse number is :", rev)
